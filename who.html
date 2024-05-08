@@ -5,6 +5,7 @@
         <title>Anti-Racism Website</title>
         <link rel="stylesheet" href="styles.css">
         <script src="https://cdn.tailwindcss.com"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     </head>
     <body class="bg-yellow-100 px-64 font-serif">
         <!-- HEADER -->
@@ -26,7 +27,7 @@
             <div class="justify-center gap-8 mb-8">
                 <div class="flex w-full justify-center">
                     <div class="w-1/2 gap-8">
-                        <div class="relative">
+                        <div class="relative" id="coolguy">
                             <img src="imgs/matthewmcwilliams.jpg" class="rounded-full transition-transform duration-300 transform hover:scale-110 w-48 h-48 max-w-48 object-cover border-4"/> 
                             <img src="imgs/coolguy.jpg" class="rounded-full absolute top-0 left-0 opacity-0 transition-opacity duration-300 transform hover:opacity-100 w-48 h-48 max-w-48 object-cover border-4"/>
                           </div>
@@ -40,7 +41,7 @@
             <div class="justify-center gap-8 mb-8">
                 <div class="flex w-full justify-center">
                     <div class="w-1/2 gap-8">
-                        <div class="relative">
+                        <div class="relative" id="rougarou">
                             <img src="imgs/Carter.JPG" class="rounded-full transition-transform duration-300 transform hover:scale-110 w-48 h-48 max-w-48 object-cover border-4"/> 
                             <img src="imgs/Rougarou.webp" class="rounded-full absolute top-0 left-0 opacity-0 transition-opacity duration-300 transform hover:opacity-100 w-48 h-48 max-w-48 object-cover border-4"/>
                           </div>
@@ -54,7 +55,7 @@
             <div class="justify-center gap-8 mb-8">
                 <div class="flex w-full justify-center">
                     <div class="w-1/2 gap-8">
-                        <div class="relative">
+                        <div class="relative" id="billgates">
                             <img src="imgs/Lucas.JPG" class="rounded-full transition-transform duration-300 transform hover:scale-110 w-48 h-48 max-w-48 object-cover border-4"/> 
                             <img src="imgs/billgates.jpg" class="rounded-full absolute top-0 left-0 opacity-0 transition-opacity duration-300 transform hover:opacity-100 w-48 h-48 max-w-48 object-cover border-4"/>
                           </div>
@@ -70,5 +71,24 @@
         <div class="p-20 py-4 bg-gray-300 text-neutral-900 flex text-sm text-center">
             <p>(c) 2024 The New Heirarchy, website made entirely by Matthew McWilliams. Lucas and Carter did absolutely nothing for the project.</p>
         </div>
+    
+        <audio>
+            <source src="audio/ihaveadream.wav"></source>
+            Your browser isn't invited for super fun audio time.
+        </audio>
+        <audio id="howlaudio">
+            <source src="audio/carterhowl.wav"></source>
+            Your browser isn't invited for super fun audio time.
+        </audio>
+        <audio id="gatesaudio">
+            <source src="audio/billgates.wav"></source>
+            Your browser isn't invited for super fun audio time.
+        </audio>
+        <audio id="amishaudio">
+            <source src="audio/amishparadise.wav"></source>
+            Your browser isn't invited for super fun audio time.
+        </audio>
     </body>
+
+    <script src="audio.js"></script>
 </html>
