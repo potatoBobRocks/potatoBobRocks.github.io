@@ -1,0 +1,13 @@
+.hero-img {
+    background-image: url("imgs/martin-luther-king-jr_002.jpg");
+    
+  background-size:cover;
+}
+
+.bg-carter {
+  background:url("foo.jpg");
+}
+
+.hover\:bg-rougarou:hover {
+  background:url("bar.jpg");
+}
